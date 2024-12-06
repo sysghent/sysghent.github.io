@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +9,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Material Icons -->
+    <!-- Material Icons (Optional if you stick to Boxicons) -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Background Container -->
+    <div class="background">
+        <!-- Symbols will be dynamically generated here -->
+    </div>
+
     <div class="container">
         <header>
             <h1>Systems Programming Ghent</h1>
@@ -22,9 +28,9 @@
                 <a href="https://github.com/sysghent" target="_blank" aria-label="GitHub">
                     <i class='bx bxl-github'></i>
                 </a>
-                <!-- Email Icon using Material Icons -->
+                <!-- Email Icon using Boxicons -->
                 <a href="mailto:sysghent@proton.me" aria-label="Contact Us">
-                    <span class="material-icons">email</span>
+                    <i class='bx bx-envelope'></i>
                 </a>
             </div>
         </header>
@@ -47,7 +53,7 @@
                 <h2>Upcoming Events</h2>
                 <ul>
                     <li class="event-item">
-                        <strong>Social:</strong> Get-to-know colleagues around a drink and plan first big community event
+                        <strong><i class='bx bx-calendar'></i> Social:</strong> Get-to-know colleagues around a drink and plan first big community event
                         <div class="event-details">
                             <span class="event-date">December 18, 2024 at 19:00</span><br>
                             <a href="https://www.google.com/maps/?q=Marengo+Ghent+Belgium" target="_blank">Marengo, Ghent</a>
@@ -57,7 +63,7 @@
                         </div>
                     </li>
                     <li class="event-item">
-                        <strong>Talk:</strong> How Rust improves the reliability of a system for train control and supervision
+                        <strong><i class='bx bx-calendar'></i> Talk:</strong> How Rust improves the reliability of a system for train control and supervision
                         <div class="event-details">
                             <span class="event-date">January TBD, 2025</span><br>
                             <a href="https://www.google.com/maps/?q=Watt+The+Firms+Ghent+Belgium" target="_blank">Watt the firms, Ghent</a>
@@ -68,7 +74,7 @@
                         </div>
                     </li>
                     <li class="event-item">
-                        <strong>Talk:</strong> Concurrent separation logic for formal verification of imperative programs (at open-source fair FOSDEM)
+                        <strong><i class='bx bx-calendar'></i> Talk:</strong> Concurrent separation logic for formal verification of imperative programs (at open-source fair FOSDEM)
                         <div class="event-details">
                             <span class="event-date">February 1, 2025 at 16:00</span><br>
                             <a href="https://www.google.com/maps/?q=ULB+Solbosch,+Brussels,+Belgium" target="_blank">ULB campus Solbosch, Brussels</a>
@@ -90,5 +96,8 @@
             </div>
         </footer>
     </div>
+
+    <!-- Include the Symbols Script -->
+    <script src="symbols.js"></script>
 </body>
 </html>

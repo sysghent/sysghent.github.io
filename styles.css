@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* CSS Variables for Colors and Fonts */
 :root {
     --primary-color: #1DB954;
@@ -18,20 +20,48 @@ body {
     font-family: var(--font-family);
     margin: 0;
     padding: 0;
-    background: var(--background-color);
+    background: linear-gradient(135deg, var(--background-color) 0%, var(--card-background) 100%);
     color: var(--text-color);
+    overflow-x: hidden; /* Prevent horizontal scroll due to absolute positioning */
 }
 
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s;
+/* Background Container */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Allow clicks to pass through */
+    overflow: hidden;
+    z-index: -1; /* Place behind all other content */
 }
 
-a:hover {
-    color: var(--primary-hover);
+/* Falling Symbols */
+.background .symbol {
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    color: rgba(224, 224, 224, 0.1); /* Light monochrome */
+    font-size: 2em;
+    animation: fall 20s linear infinite;
+    user-select: none; /* Prevent text selection */
 }
 
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -147,7 +177,7 @@ ul {
 }
 
 .event-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px) scale(1.02);
     background: var(--event-hover-background);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
 }
@@ -184,8 +214,12 @@ ul {
     margin-top: 10px;
 }
 
-.event-tags a {
+a {
     color: var(--primary-color);
+}
+
+.event-tags a {
+    
     text-decoration: none;
     font-size: 0.9em;
     position: relative;
@@ -205,7 +239,7 @@ ul {
     color: var(--separator-hover);
 }
 
-/* Footer (Optional) */
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -288,5 +322,10 @@ footer a:hover {
 
     .event-item {
         padding: 15px;
+    }
+
+    /* Adjust symbol size on very small screens */
+    .background .symbol {
+        font-size: 1.5em;
     }
 }
