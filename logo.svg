@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- logo.svg -->
+
+<svg
+   width="150"
+   height="150"
+   viewBox="0 0 200 200"
+   version="1.1"
+   id="svg56"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs60" />
+  <sodipodi:namedview
+     id="namedview58"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="5.2679158"
+     inkscape:cx="89.599002"
+     inkscape:cy="74.792388"
+     inkscape:window-width="1920"
+     inkscape:window-height="1128"
+     inkscape:window-x="350"
+     inkscape:window-y="1440"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg56">
+    <inkscape:grid
+       type="xygrid"
+       id="grid167" />
+  </sodipodi:namedview>
+  <!-- Shield Shape -->
+  <path
+     d="M 96.176759,185.10537 15.624587,139.07707 V 24.006286 c 0,-23.01416306 161.104353,-23.01416306 161.104353,0 V 139.07707 Z"
+     fill="#1e90ff"
+     stroke="#ffffff"
+     stroke-width="11.2751"
+     id="path48" />
+  <!-- Coding Brackets -->
+  <g
+     stroke="#ffffff"
+     stroke-width="10"
+     fill="none"
+     id="g54"
+     transform="matrix(1.7185879,0,0,1.4469098,-70.161399,-54.223395)">
+    <!-- Left Bracket ('<') -->
+    <path
+       d="m 109.54571,69.964825 20,30.000004 -20,29.999991"
+       id="path50" />
+    <!-- Right Bracket ('>') -->
+    <path
+       d="m 84.039882,69.46785 -20,29.999997 20,30.000003"
+       id="path52" />
+  </g>
+</svg>

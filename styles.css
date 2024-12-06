@@ -2,16 +2,16 @@
 
 /* CSS Variables for Colors and Fonts */
 :root {
-    --primary-color: #1DB954;
-    --primary-hover: #1ed760;
-    --background-color: #121212;
-    --text-color: #e0e0e0;
-    --secondary-text: #b3b3b3;
-    --card-background: #1e1e1e;
-    --event-background: #2c2c2c;
-    --event-hover-background: #3a3a3a;
-    --separator-color: #1DB954;
-    --separator-hover: #1ed760;
+    --primary-color: #1E90FF; /* Dodger Blue */
+    --primary-hover: #104E8B; /* Darker Blue */
+    --background-color: #121212; /* Dark Background */
+    --text-color: #FFFFFF; /* White Text */
+    --secondary-text: #b3b3b3; /* Light Gray Text */
+    --card-background: #1e1e1e; /* Dark Card Background */
+    --event-background: #2c2c2c; /* Slightly Lighter Card */
+    --event-hover-background: #3a3a3a; /* Even Lighter on Hover */
+    --separator-color: #1E90FF;
+    --separator-hover: #104E8B;
     --font-family: 'Roboto', sans-serif;
 }
 
@@ -41,7 +41,7 @@ body {
 .background .symbol {
     position: absolute;
     top: -50px; /* Start above the viewport */
-    color: rgba(224, 224, 224, 0.1); /* Light monochrome */
+    color: rgba(255, 255, 255, 0.1); /* Light monochrome */
     font-size: 2em;
     animation: fall 20s linear infinite;
     user-select: none; /* Prevent text selection */
@@ -74,13 +74,35 @@ header {
     margin-bottom: 60px;
 }
 
+/* Logo Styling */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Reduced space between logo and title */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 100px; /* Adjusted width to match the img attribute */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Title */
 h1 {
     font-size: 3em;
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Adjusted if necessary */
     animation: fadeInDown 1s ease-out;
 }
 
+/* Tagline */
 .tagline {
     font-size: 1.2em;
     color: var(--secondary-text);
@@ -141,7 +163,7 @@ main {
 }
 
 .description p {
-    color: #cfcfcf;
+    color: var(--secondary-text);
     line-height: 1.8;
     font-size: 1em;
 }
@@ -197,7 +219,7 @@ ul {
 
 .event-date {
     font-weight: bold;
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .event-details a {
