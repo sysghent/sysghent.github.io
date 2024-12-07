@@ -168,9 +168,7 @@ main {
     font-size: 1em;
 }
 
-.description ul {
-    padding-left: 20px;
-}
+
 
 
 
@@ -190,7 +188,7 @@ aside h2 {
     text-align: left;
 }
 
-ul {
+aside ul {
     list-style-type: none;
     padding: 0;
 }
