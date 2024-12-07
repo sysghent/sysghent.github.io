@@ -162,11 +162,17 @@ main {
     font-size: 1.8em;
 }
 
-.description p {
+.description p,li  {
     color: var(--secondary-text);
     line-height: 1.8;
     font-size: 1em;
 }
+
+.description ul {
+    padding-left: 20px;
+}
+
+
 
 /* Aside */
 aside {
