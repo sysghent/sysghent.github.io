@@ -1,5 +1,3 @@
-// symbols.js
-
 // Arrays of programming languages and type-theoretic symbols
 const programmingLanguages = [
     "C++", "Rust", "Haskell", "Scala", "Elixir",
