@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920px"
+   height="1080px"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="first_social.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview147"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:zoom="0.914906"
+     inkscape:cx="-207.67161"
+     inkscape:cy="561.25984"
+     inkscape:window-width="3840"
+     inkscape:window-height="2088"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs142" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#b7c4c8"
+       id="rect209"
+       width="1933.532"
+       height="1083.1714"
+       x="-13.116105"
+       y="-3.2790253" />
+    <path
+       d="M 965.51005,792.22807 742.58535,657.65153 V 321.2098 c 0,-67.28827 445.84945,-67.28827 445.84945,0 v 336.44173 z"
+       fill="#1e90ff"
+       stroke="#ffffff"
+       stroke-width="32.0725"
+       id="path48"
+       style="fill:#0b2822" />
+    <g
+       stroke="#ffffff"
+       stroke-width="10"
+       fill="none"
+       id="g54"
+       transform="matrix(4.7561185,0,0,4.2304461,505.1763,92.48364)">
+      <!-- Left Bracket ('<') -->
+      <path
+         d="m 109.54571,69.964825 20,30.000004 -20,29.999991"
+         id="path50" />
+      <!-- Right Bracket ('>') -->
+      <path
+         d="m 84.039882,69.46785 -20,29.999997 20,30.000003"
+         id="path52" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:133.333px;fill:#b7c4c8"
+       x="111.48687"
+       y="148.64915"
+       id="text684"><tspan
+         sodipodi:role="line"
+         id="tspan682"
+         x="111.48687"
+         y="148.64915"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:133.333px;font-family:'Latin Modern Mono Caps';-inkscape-font-specification:'Latin Modern Mono Caps';fill:#1c1f24">Systems Programming Ghent</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:333.523px;font-family:'Latin Modern Mono Caps';-inkscape-font-specification:'Latin Modern Mono Caps';fill:#1c1f24;stroke-width:2.50143"
+       x="90.363152"
+       y="636.43121"
+       id="text892"><tspan
+         sodipodi:role="line"
+         id="tspan890"
+         x="90.363152"
+         y="636.43121"
+         style="stroke-width:2.50143">C++</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:292.229px;font-family:'Latin Modern Mono Caps';-inkscape-font-specification:'Latin Modern Mono Caps';fill:#1c1f24;stroke-width:2.19172"
+       x="1243.6268"
+       y="622.35999"
+       id="text896"><tspan
+         sodipodi:role="line"
+         id="tspan894"
+         x="1243.6268"
+         y="622.35999"
+         style="stroke-width:2.19172">Rust</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:96px;font-family:'Latin Modern Mono Caps';-inkscape-font-specification:'Latin Modern Mono Caps';fill:#1c1f24"
+       x="31.697245"
+       y="925.7782"
+       id="text900"><tspan
+         sodipodi:role="line"
+         id="tspan898"
+         x="31.697245"
+         y="925.7782"
+         style="font-size:96px">By software engineers</tspan><tspan
+         sodipodi:role="line"
+         x="31.697245"
+         y="1045.7782"
+         id="tspan902"
+         style="font-size:96px">               For software Engineers</tspan></text>
+  </g>
+</svg>
