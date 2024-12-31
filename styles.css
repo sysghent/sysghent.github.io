@@ -34,6 +34,11 @@ body {
     /* Prevent horizontal scroll due to absolute positioning */
 }
 
+blockquote {
+    font-style: italic;
+    color: var(--secondary-text);
+}
+
 /* Background Container */
 .background {
     position: fixed;
@@ -114,10 +119,13 @@ header {
 
 /* Title */
 h1 {
-    font-size: 3em;
+    font-size: 5em;
     color: var(--primary-color);
+    margin-top: 0;
     margin-bottom: 10px;
     /* Adjusted if necessary */
+    ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     animation: fadeInDown 1s ease-out;
 }
 
@@ -348,6 +356,10 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 3em;
+    }
+
     .links a {
         margin: 0 10px;
     }
