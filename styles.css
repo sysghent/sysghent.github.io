@@ -124,8 +124,7 @@ h1 {
     margin-top: 0;
     margin-bottom: 10px;
     /* Adjusted if necessary */
-    ;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
     animation: fadeInDown 1s ease-out;
 }
 
