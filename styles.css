@@ -20,7 +20,7 @@
     /* Even Lighter on Hover */
     --separator-color: #1E90FF;
     --separator-hover: #104E8B;
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Fira Sans', sans-serif;
 }
 
 /* General Styling */
@@ -123,8 +123,6 @@ h1 {
     color: var(--primary-color);
     margin-top: 0;
     margin-bottom: 10px;
-    /* Adjusted if necessary */
-    font-family: Arial, Helvetica, sans-serif;
     animation: fadeInDown 1s ease-out;
 }
 
