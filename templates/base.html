@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ config.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Material Icons (Optional if you stick to Boxicons) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="{{ get_url(path='logo.svg') }}" type="image/svg+xml">
+</head>
+
+<body>
+    <div class="background">
+        <!-- Symbols will be dynamically generated here -->
+    </div>
+
+    <div id="foreground">
+
+        <header>
+            <div class="logo">
+                <img src="{{ get_url(path='logo.svg') }}" alt="Systems Programming Ghent Logo" width="100" height="100">
+            </div>
+
+            <h1>{{ config.title }}</h1>
+
+            <p class="tagline">{{ config.description }}</p>
+
+            <div class="links" id="links">
+                <a href="mailto:sysghent@proton.me" aria-label="Contact Us">
+                    <span> Register</span> <i class='bx bx-envelope'></i>
+                </a>
+                <a href="https://signal.group/#CjQKIIFBw0pWntM-J2GbMnBP-Ywv8rwMGJHODejgkR6a2pJIEhARmshQohwfrfZZ8aKDUsLJ"
+                    aria-label="Signal Chat"> <span> Chat</span>
+                    <i class='bx bx-chat'></i>
+                </a>
+                <a href="https://www.meetup.com/systems-programming-ghent/" aria-label="Meetup Group"> <span>
+                        Meetup</span>
+                    <i class='bx bx-news'></i>
+                </a>
+            </div>
+        </header>
+
+        <aside>
+            <h2>Upcoming Events</h2>
+            <ul>
+                {% set section = get_section(path="events/_index.md") %}
+                {% for event in section.pages %}
+                <li class="event-item">
+                    <a href="{{ event.permalink }}"><strong><i class='bx bx-calendar'></i> {{ event.title
+                            }}:</strong></a>
+                    {{ event.description }}
+                    <div class="event-details">
+                        <span class="event-date">{{ event.date }} {% if event.extra.time %} at {{ event.extra.time }} {%
+                            endif %} </span><br>
+                        {% if event.extra["location_url"] and event.extra["location"] %}
+                        <a href="{{ event.extra['location_url'] }}" target="_blank">{{ event.extra['location'] }}</a>
+                        {% endif %}
+                    </div>
+                    <div class="event-tags">
+
+                        {% if event.taxonomies.links %}
+                        <span>Links: </span>
+                        {% for link in event.taxonomies.links %}
+                        <a href="{{ link }}" target="_blank">{{ link |
+                            truncate(length=25) | replace(from="https://", to="") | replace(from="www.", to="") }}</a>
+                        {% endfor %}
+                        {% endif %}
+
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </aside>
+
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Systems Programming Ghent. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

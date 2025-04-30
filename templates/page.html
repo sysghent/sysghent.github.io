@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+
+
+
+
+{% block content %}
+<article>
+
+    <header>
+
+
+        <h1 class="title">
+            {{ page.title }}
+        </h1>
+
+
+
+
+
+        <p class="post_date">{{ page.date | date(format="%A, %Y-%m-%d") }}</p>
+
+
+
+
+        <p class="subtitle">
+            {{ page.description }}
+        <p>
+
+
+
+
+    </header>
+
+
+    {% if page.lower %}
+    <p> Previous post:
+        <a href="{{ page.lower.permalink | safe }}">{{ page.lower.title }}</a>.
+    </p>
+
+    {% endif %}
+
+
+
+    {% if page.toc %}
+    <ul class="post_top_headers">
+        {% for h1 in page.toc %}
+        <li>
+
+
+            {% if h1.children %}
+            <details>
+
+                <summary>
+                    <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                </summary>
+                <ul>
+                    {% for h2 in h1.children %}
+                    <li>
+                        <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </details>
+            {% else %}
+            <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+
+    {{ page.content | safe }}
+
+
+</article>
+
+
+
+{% endblock content %}

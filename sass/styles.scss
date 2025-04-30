@@ -64,8 +64,13 @@ blockquote {
     }
 }
 
+main h1 {
+    margin-top: 2em;
+    font-size: 3em;
+}
+
 /* Container */
-.container {
+#foreground {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -233,6 +238,7 @@ aside ul {
 
 .event-date {
     font-weight: bold;
+
     color: var(--tertiary-text);
 }
 

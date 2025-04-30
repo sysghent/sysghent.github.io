@@ -1,0 +1,7 @@
+base_url = "https://sysghent.be"
+title = "Systems Programming Ghent"
+description = "Open community for systems programmers around Ghent"
+default_language = "en"
+build_search_index = true
+compile_sass = true
+taxonomies = [{ name = "tags", feed = true }, { name = "links" }]
