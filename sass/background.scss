@@ -1,4 +1,6 @@
 html {
+    margin: 0;
+    padding: 0;
     height: 100%;
     width: 100%;
     display: flex;
@@ -8,9 +10,10 @@ html {
 }
 
 body {
+    margin: 0;
     width: 100%;
     height: 100%;
-    padding: 1em;
+    padding: 0em;
     background: linear-gradient(135deg, var(--primary-background) 50%, var(--secondary-background) 100%);
 
     display: flex;
@@ -28,6 +31,8 @@ body {
 
 
 main {
+    margin: 0;
+    padding: 1em;
     display: flex;
     gap: 2em;
 }
