@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>SysGhent</title>
+    <link rel="self" type="application/atom+xml" href="https://sysghent.be/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://sysghent.be"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-07-15T00:00:00+00:00</updated>
+    <id>https://sysghent.be/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Modern systems programming</title>
+        <published>2025-07-15T00:00:00+00:00</published>
+        <updated>2025-07-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/world-systems/"/>
+        <id>https://sysghent.be/events/world-systems/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/world-systems/">&lt;p&gt;Let us know if you would like to give a talk or presentation on modern systems programming!&lt;&#x2F;p&gt;
+&lt;p&gt;Willem is currently reading about proof assistants and would maybe give a short presentation about that.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Meet and greet</title>
+        <published>2025-06-23T00:00:00+00:00</published>
+        <updated>2025-06-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/meet-greet/"/>
+        <id>https://sysghent.be/events/meet-greet/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/meet-greet/">&lt;p&gt;As usual we will meet at Marengo, a cozy bar near the city center of Ghent.&lt;&#x2F;p&gt;
+&lt;p&gt;You can join for drinks, dinner or just to chat with other systems programmers.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Grow smarter with embedded Rust</title>
+        <published>2025-06-04T00:00:00+00:00</published>
+        <updated>2025-06-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/plant-pot/"/>
+        <id>https://sysghent.be/events/plant-pot/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/plant-pot/">&lt;p&gt;Tasks for participants of the workshop are available at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sysghent&#x2F;plant-pot&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#f9f9f9;color:#111111;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8959a8;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; pot &lt;&#x2F;span&gt;&lt;span style=&quot;color:#3e999f;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;PlantPot::new();
+&lt;&#x2F;span&gt;&lt;span&gt;    pot.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;water&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    pot.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;fertilize&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    pot.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#4271ae;&quot;&gt;check_health&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;grow_smarter.jpg&quot; alt=&quot;Plant Pot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Functional Programming</title>
+        <published>2025-04-01T00:00:00+00:00</published>
+        <updated>2025-04-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/functional-programming/"/>
+        <id>https://sysghent.be/events/functional-programming/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/functional-programming/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Tech talks</title>
+        <published>2025-01-21T00:00:00+00:00</published>
+        <updated>2025-01-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/january-talks/"/>
+        <id>https://sysghent.be/events/january-talks/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/january-talks/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;hugo.jpg&quot; alt=&quot;Hugo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Launch event</title>
+        <published>2024-12-18T00:00:00+00:00</published>
+        <updated>2024-12-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/first-event/"/>
+        <id>https://sysghent.be/events/first-event/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/first-event/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;marengo.jpg&quot; alt=&quot;Marengo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
