@@ -1,0 +1,73 @@
+/* Logo Styling */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Reduced space between logo and title */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    width: 100px;
+    /* Adjusted width to match the img attribute */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Title */
+h1 {
+    font-size: 5em;
+    color: var(--primary-text);
+    margin-top: 0;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease-out;
+}
+
+
+/* Tagline */
+.tagline {
+    font-size: 1.2em;
+    color: var(--tertiary-text);
+    margin-bottom: 30px;
+}
+
+/* Links Container as Flexbox */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+/* Link Styles */
+.links a {
+    color: var(--primary-text);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+/* Icon Styling */
+
+.links a {
+    color: var(--primary-text);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: none;
+}
+
+#atmosphere {
+    width: 70%;
+}

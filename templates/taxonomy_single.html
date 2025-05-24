@@ -1,0 +1,29 @@
+{% extends "page.html" %}
+
+{% block content %}
+
+<h2>Posts tagged with "{{ term.name }}"</h2>
+
+
+<p>For more tags, see <a href="/tags">here</a>.</p>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+    <tbody>
+        {% for page in term.pages %}
+        <tr>
+            <td><time datetime="{{ page.date }}">{{ page.date | date(format="%B %e, %Y") }}</time></td>
+            <td><a href="{{ page.permalink }}">{{ page.title }}</a></td>
+            <td>{{ page.description }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock content %}

@@ -1,0 +1,87 @@
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+    overflow: auto;
+}
+
+body {
+
+    margin: 1em;
+    padding: 0;
+    background: linear-gradient(135deg, var(--primary-background) 50%, var(--secondary-background) 100%);
+
+    display: flex;
+    flex-direction: column;
+    // position: fixed;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: fit-content;
+
+
+
+
+}
+
+
+main {
+    display: flex;
+    gap: 2em;
+}
+
+
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* Allow clicks to pass through */
+    overflow: hidden;
+    z-index: -1;
+    /* Place behind all other content */
+}
+
+/* Falling Symbols */
+.background .symbol {
+    position: absolute;
+    top: -50px;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    animation: fall 20s linear infinite;
+    user-select: none;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.2;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0.2;
+    }
+}
+
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

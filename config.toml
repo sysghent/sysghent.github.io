@@ -1,0 +1,27 @@
+author = "Willem Vanhulle"
+base_url = "https://sysghent.be"
+title = "SysGhent"
+
+
+build_search_index = true
+compile_sass = true
+feed_filenames = ["atom.xml"]
+generate_feeds = true
+taxonomies = [
+    { name = "tags", description = "Tags" },
+    { name = "links", description = "Links" },
+]
+
+[markdown]
+
+# Navigation
+bottom_footnotes = true
+
+# Prose
+render_emoji = true
+smart_punctuation = true
+
+# Code
+error_on_missing_highlight = true
+highlight_code = true
+highlight_theme = "demain"

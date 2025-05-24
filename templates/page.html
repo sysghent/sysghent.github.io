@@ -1,0 +1,187 @@
+{% extends "base.html" %}
+
+
+{% block head %}
+
+
+<title>
+
+
+    {% if page.title %}
+    {{ page.title }}
+    {% else %}
+    {{ config.title }}
+    {% endif %}
+
+
+
+</title>
+{% endblock %}
+
+{% block top %}
+
+<header id="permanent-header">
+
+
+    <a href="/">
+        <img id="logo" src="/logo.svg" alt="Systems Programming Ghent Logo" width="100" height="100">
+    </a>
+
+
+
+</header>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<header>
+
+
+    <h2 class="title">
+        {% if page.type %}
+        <strong><i class='bx bx-calendar'></i>{{ page.type }}:</strong>
+        {% endif %}
+
+        {{ page.title }}
+
+    </h2>
+
+
+    <p>
+    <ul id="page-tags">
+        {%- for tag in page.taxonomies.tags -%}
+        <li><a href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag }}</a></li>
+        {%- endfor -%}
+
+    </ul>
+
+
+    </p>
+
+</header>
+
+
+<section>
+
+    <p>
+
+
+        {{ page.date | date(format="%a, %Y-%m-%d") }}
+        {% if page.extra.time %} at {{ page.extra.time }} {% endif %}
+
+
+
+
+
+    </p>
+
+
+
+    <p>{%if page.extra.registration %}
+        <a class="event-date" href="{{ page.extra.registration }}">
+            <span class="bx bx-calendar-check"></span> Register
+        </a>
+        {% endif %}
+    </p>
+
+
+    {% if page.extra.location %}
+    <p>
+        <a href="https://www.openstreetmap.org/search?query={{ page.extra.location }}" target="_blank">{{
+            page.extra.location }}</a>
+        {% endif %}
+
+
+
+    </p>
+
+
+    {%- if page.taxonomies and page.taxonomies.tags -%}
+
+
+
+    {%- else -%}
+    <h4>Uncategorised</h4>
+
+    {%- endif -%}
+
+    <h3>
+        {{ page.description }}
+    </h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {% if page.toc %}
+    <ul class="post_top_headers">
+        {% for h1 in page.toc %}
+        <li>
+
+
+            {% if h1.children %}
+            <details>
+
+                <summary>
+                    <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                </summary>
+                <ul>
+                    {% for h2 in h1.children %}
+                    <li>
+                        <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </details>
+            {% else %}
+            <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+
+    {{ page.content | safe }}
+
+
+
+
+</section>
+
+
+
+<footer id="last-next">
+
+
+
+    {% if page.higher %}
+    <span>←
+        <a href="{{ page.higher.permalink | safe }}">{{ page.higher.title }}</a> </span>
+
+
+    {% endif %}
+
+    {% if page.lower %}
+    <span>
+        <a href="{{ page.lower.permalink | safe }}">{{ page.lower.title }}</a> → </span>
+
+
+    {% endif %}
+</footer>
+
+{% endblock content %}

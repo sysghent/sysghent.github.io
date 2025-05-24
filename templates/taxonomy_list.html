@@ -1,0 +1,19 @@
+{% extends "page.html" %}
+
+{% block content %}
+
+<h2>Events by topic</h2>
+
+<p>A list of all tags associated with events:</p>
+
+<ul class="alt columns">
+    {% for tag in terms %}
+    <li><a href="{{ get_taxonomy_url(kind='tags', name=tag.name) }}">{{ tag.name }}</a> ({{
+        tag.pages
+        | length
+        }})
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}

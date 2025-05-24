@@ -1,0 +1,19 @@
+@media (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #sidebar {
+        position: unset;
+        min-width: 100%;
+    }
+
+
+
+
+    article {
+        min-width: 100%;
+        ;
+    }
+}
