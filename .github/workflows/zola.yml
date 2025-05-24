@@ -2,6 +2,9 @@ name: Build with Zola and Deploy to GitHub Pages
 
 on: [push, pull_request]
 
+permissions:
+  contents: write
+
 jobs:
   build_drafts:
     runs-on: ubuntu-latest
