@@ -186,6 +186,7 @@ aside,
 footer {
     flex: 2;
     background: var(--secondary-background);
+    height: fit-content;
     padding: 25px;
     border-radius: 10px;
     border: 0.3em solid var(--primary-text);
