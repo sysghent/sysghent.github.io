@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>SysGhent</title>
+    <link rel="self" type="application/atom+xml" href="https://sysghent.be/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://sysghent.be"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-07-31T00:00:00+00:00</updated>
+    <id>https://sysghent.be/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Showcase personal projects</title>
+        <published>2025-07-31T00:00:00+00:00</published>
+        <updated>2025-07-31T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/showcase-projects/"/>
+        <id>https://sysghent.be/events/showcase-projects/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/showcase-projects/">&lt;p&gt;Do you have a cool personal project that you want to show? Let us know and we will give you a slot to present it. We will have a projector and a microphone available.&lt;&#x2F;p&gt;
+&lt;p&gt;Those who are interested can join us for dinner at 18:30 in one of the restaurants nearby (TBA).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Debugging embedded Rust</title>
+        <published>2025-07-15T00:00:00+00:00</published>
+        <updated>2025-07-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/debug-embedded/"/>
+        <id>https://sysghent.be/events/debug-embedded/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/debug-embedded/">&lt;p&gt;This workshop is a follow-up to the &lt;a href=&quot;&#x2F;events&#x2F;plant-pot&quot;&gt;plant-pot&lt;&#x2F;a&gt; workshop, where we will focus on debugging embedded Rust applications using GDB and OpenOCD.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Get to know locals</title>
+        <published>2025-06-23T00:00:00+00:00</published>
+        <updated>2025-06-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/meet-locals/"/>
+        <id>https://sysghent.be/events/meet-locals/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/meet-locals/">&lt;p&gt;As usual we will meet at Marengo, a cozy bar near the city center of Ghent.&lt;&#x2F;p&gt;
+&lt;p&gt;Estimated schedule:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;19:00: Dinner for those who want to join&lt;&#x2F;li&gt;
+&lt;li&gt;20:00: Drinks and socializing&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Grow smarter with embedded Rust</title>
+        <published>2025-06-04T00:00:00+00:00</published>
+        <updated>2025-06-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/plant-pot/"/>
+        <id>https://sysghent.be/events/plant-pot/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/plant-pot/">&lt;p&gt;Notes by Willem for the Embassy part: &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sysghent&#x2F;plant-pot&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Hugo presenting the Pico 2 W:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;hugo_pointing.jpg&quot; alt=&quot;Hugo pointing at slides&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Two participants working on their plant pot:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;pair_programming.jpg&quot; alt=&quot;pair_programming&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Functional Programming</title>
+        <published>2025-04-01T00:00:00+00:00</published>
+        <updated>2025-04-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/functional-programming/"/>
+        <id>https://sysghent.be/events/functional-programming/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/functional-programming/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Tech talks</title>
+        <published>2025-01-21T00:00:00+00:00</published>
+        <updated>2025-01-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/january-talks/"/>
+        <id>https://sysghent.be/events/january-talks/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/january-talks/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;hugo.jpg&quot; alt=&quot;Hugo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Launch event</title>
+        <published>2024-12-18T00:00:00+00:00</published>
+        <updated>2024-12-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/first-event/"/>
+        <id>https://sysghent.be/events/first-event/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/first-event/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;marengo.jpg&quot; alt=&quot;Marengo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
