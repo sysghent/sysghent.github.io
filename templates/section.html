@@ -9,42 +9,85 @@
 
 <header>
 
-    <h2>{{ section.title }}</h2>
+    <h2 id="title">{{ section.title }}</h2>
 </header>
 
 {{ section.content | safe}}
 
-<table>
-    <thead>
-        <tr>
-            <th>Date</th>
-            <th>Title</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
+<section id="calendar">
+    <h3>Upcoming Events</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
 
 
 
 
 
-        {% for post in section.pages %}
+            {% for post in section.pages %}
 
 
-        {% set d = post.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
+            {% set d = post.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
 
-        <tr class="{% if d > n %}future{% else %}past{% endif %}">
-            <td>{{ post.date | date(format="%A, %Y-%m-%d") }}</td>
-            <td><a href="{{ post.permalink }}">{{ post.title }}</a></td>
-            <td>{{ post.description }}</td>
-        </tr>
-        {% endfor %}
-    </tbody>
-</table>
+            {% if d > n %}
 
 
+            <tr class="{% if d > n %}future{% else %}past{% endif %}">
+                <td>{{ post.date | date(format="%A, %Y-%m-%d") }}</td>
+                <td><a href="{{ post.permalink }}">{{ post.title }}</a></td>
+                <td>{{ post.description }}</td>
+            </tr>
 
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <h3>Past Events</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Title</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
+
+
+
+
+
+            {% for post in section.pages %}
+
+
+            {% set d = post.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
+
+            {% if d < n %} <tr class="{% if d > n %}future{% else %}past{% endif %}">
+                <td>{{ post.date | date(format="%A, %Y-%m-%d") }}</td>
+                <td><a href="{{ post.permalink }}">{{ post.title }}</a></td>
+                <td>{{ post.description }}</td>
+                </tr>
+
+                {% endif %}
+
+                {% endfor %}
+        </tbody>
+    </table>
+
+
+</section>
 
 
 {% endblock content %}

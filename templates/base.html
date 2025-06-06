@@ -73,7 +73,7 @@
             <ul id="section-list">
                 <li id="home-button">
                     <h3>
-                        <a href="/">
+                        <a href="/#title">
                             About
                         </a>
                     </h3>
@@ -82,30 +82,38 @@
                 {% set section = get_section(path="events/_index.md") %}
                 <li class="section-page-listing">
                     <h3>
-                        <a href="/events">{{ section.title }}</a>
+                        Upcoming {{ section.title }}
                     </h3>
                     <ul id="event-list">
 
                         {% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
-                        {% for page in section.pages %}
+
+                        {% for page in section.pages | reverse %}
+
 
 
                         {% set d = page.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
+
                         {% if d > n %}
+
 
                         <li class="event-item">
 
                             <div class="event-title">
-                                {% if page.type %}
-                                <strong><i class='bx bx-calendar'></i>{{ page.type }}:</strong>
+                                {% if page.extra.type %}
+                                <span class="event-type">
+                                    {{ page.extra.type }}:
+                                </span>
                                 {% endif %}
-                                <a href="{{ page.permalink }}#page-header">
+                                <a href="{{ page.permalink }}#title">
                                     {{ page.title }}
                                 </a>
 
                             </div>
 
                             <div class="event-description">
+
+                                {% if page.extra.registration %}
                                 <a class="event-date" href="{{ page.extra.registration }}">
 
 
@@ -117,6 +125,23 @@
 
 
                                 </a>
+
+                                {% else %}
+
+                                <span class="event-date">
+
+
+
+                                    <span class="bx bx-calendar-check"></span>
+
+                                    {{ page.date | date(format="%a, %Y-%m-%d") }}
+                                    {% if page.extra.time %} at {{ page.extra.time }} {% endif %}
+
+
+                                </span>
+
+
+                                {% endif %}
 
 
 
@@ -133,10 +158,13 @@
 
 
                         </li>
-
                         {% endif %}
                         {% endfor %}
                     </ul>
+
+                    <h3>
+                        <a href="/events#title">{{ section.title }}</a>
+                    </h3>
 
                 </li>
 

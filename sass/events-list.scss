@@ -6,7 +6,6 @@
     min-width: 20em;
     width: fit-content;
     top: 1em;
-    // left: 3em;
     flex: 2;
     background: var(--secondary-background);
     height: fit-content;
@@ -30,6 +29,11 @@ aside ul {
     padding: 0;
 }
 
+.event-type {
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
 #event-list {
     margin-top: 5px;
     font-size: 0.95em;
@@ -49,6 +53,9 @@ aside ul {
             font-weight: bold;
             color: var(--primary-text);
             font-size: 1.3em;
+            text-transform: capitalize;
+
+
         }
 
         & .event-description {

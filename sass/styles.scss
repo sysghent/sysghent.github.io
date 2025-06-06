@@ -39,6 +39,8 @@ img {
 
 }
 
+
+
 pre {
     background-color: var(--code_background) !important;
     padding: 1em;
@@ -111,6 +113,10 @@ table {
     overflow-x: auto;
     border: var(--border);
 
+}
+
+#calendar {
+    margin-top: 4em;
 }
 
 td,
