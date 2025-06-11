@@ -2,6 +2,8 @@
 title = "Debugging embedded Rust"
 description = "Learn how to debug your embedded Rust applications using GDB and OpenOCD."
 weight = 8
+draft = true
+
 
 [taxonomies]
 tags = ["GDB", "OpenOCD", "embedded", "debug", "Rust", "ESP32", "Raspberry", "Pico"]

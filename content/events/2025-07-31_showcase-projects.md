@@ -2,7 +2,7 @@
 title = "Showcase personal projects"
 description = "See what other systems programmers do in the neighbourhood."
 weight = 5
-
+draft = true
 [taxonomies]
 tags = []
 
