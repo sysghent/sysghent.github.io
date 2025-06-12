@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>SysGhent</title>
+    <link rel="self" type="application/atom+xml" href="https://sysghent.be/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://sysghent.be"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-07-17T00:00:00+00:00</updated>
+    <id>https://sysghent.be/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Solving puzzles with Lean</title>
+        <published>2025-07-17T00:00:00+00:00</published>
+        <updated>2025-07-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/lean/"/>
+        <id>https://sysghent.be/events/lean/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/lean/">&lt;p&gt;We will explore how to use the ground-breaking &lt;a href=&quot;https:&#x2F;&#x2F;leanprover-community.github.io&#x2F;&quot;&gt;Lean theorem prover&lt;&#x2F;a&gt; to solve complex logical and mathematical puzzles.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#requirements&quot; aria-label=&quot;Anchor link for: requirements&quot;&gt;Requirements&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This workshop is suitable for everyone who:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;had a basic course on theorem proving,&lt;&#x2F;li&gt;
+&lt;li&gt;knows at least one programming language,&lt;&#x2F;li&gt;
+&lt;li&gt;loves mathematical or logical puzzles.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;what-to-expect&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#what-to-expect&quot; aria-label=&quot;Anchor link for: what-to-expect&quot;&gt;What to expect&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;We will try to solve some interesting puzzles using Lean. The puzzles will be chosen based on the participants’ interests and skill levels.&lt;&#x2F;p&gt;
+&lt;p&gt;You can find some examples of easier, step-wise Lean puzzles in a collection by &lt;a href=&quot;https:&#x2F;&#x2F;adam.math.hhu.de&#x2F;&quot;&gt;Heinrich Heine University Düsseldorf&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;For a more advanced preview of Lean, see  the proof of &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;leanprover-community&#x2F;mathlib4&#x2F;blob&#x2F;7deb334c5f5104f4edad1a6396dd02a8cddefb86&#x2F;Mathlib&#x2F;Data&#x2F;Nat&#x2F;Prime&#x2F;Infinite.lean#L27-L38&quot;&gt;infinitude of primes&lt;&#x2F;a&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#f9f9f9;color:#111111;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;theorem exists_infinite_primes (n : ℕ) : ∃ p, n ≤ p ∧ Prime p :=
+&lt;&#x2F;span&gt;&lt;span&gt;  let p := minFac (n ! + 1)
+&lt;&#x2F;span&gt;&lt;span&gt;  have f1 : n ! + 1 ≠ 1 := ne_of_gt &amp;lt;| succ_lt_succ &amp;lt;| factorial_pos _
+&lt;&#x2F;span&gt;&lt;span&gt;  have pp : Prime p := minFac_prime f1
+&lt;&#x2F;span&gt;&lt;span&gt;  have np : n ≤ p :=
+&lt;&#x2F;span&gt;&lt;span&gt;    le_of_not_ge fun h =&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      have h₁ : p ∣ n ! := dvd_factorial (minFac_pos _) h
+&lt;&#x2F;span&gt;&lt;span&gt;      have h₂ : p ∣ 1 := (Nat.dvd_add_iff_right h₁).2 (minFac_dvd _)
+&lt;&#x2F;span&gt;&lt;span&gt;      pp.not_dvd_one h₂
+&lt;&#x2F;span&gt;&lt;span&gt;  ⟨p, np, pp⟩
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Don’t worry, we will start with simple examples.&lt;&#x2F;p&gt;
+&lt;p&gt;More &lt;a href=&quot;https:&#x2F;&#x2F;leanprover-community.github.io&#x2F;1000.html&quot;&gt;examples of theorems&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;details&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#details&quot; aria-label=&quot;Anchor link for: details&quot;&gt;Details&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The workshop and presentation itself is free.&lt;&#x2F;p&gt;
+&lt;p&gt;You can find details about the room at &lt;a href=&quot;https:&#x2F;&#x2F;zalenzoeker.stad.gent&#x2F;zalen&#x2F;fbb665eb-8877-443b-ad2d-e52674635498&quot;&gt;Balkonzaal&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;We plan to have dinner before the workshop together nearby around Vrijdagmarkt, Ghent. Let us know (using the Signal chat) if you want to join.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Connect and Unwind</title>
+        <published>2025-06-23T00:00:00+00:00</published>
+        <updated>2025-06-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/meet-locals/"/>
+        <id>https://sysghent.be/events/meet-locals/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/meet-locals/">&lt;p&gt;As usual, we will meet at the Marengo bar&#x2F;restaurant.&lt;&#x2F;p&gt;
+&lt;p&gt;You can join us at any time in the evening, but here’s a rough schedule:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;19:00: Dinner for those who want to join&lt;&#x2F;li&gt;
+&lt;li&gt;20:00: Drinks and socializing&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can find us on one of the tables inside.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Grow smarter with embedded Rust</title>
+        <published>2025-06-04T00:00:00+00:00</published>
+        <updated>2025-06-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/plant-pot/"/>
+        <id>https://sysghent.be/events/plant-pot/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/plant-pot/">&lt;h2 id=&quot;hardware-part&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#hardware-part&quot; aria-label=&quot;Anchor link for: hardware-part&quot;&gt;Hardware part&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This part was done by Hugo. Notes on hardware are in a slide-deck by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hoh&quot;&gt;Hugo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Hugo presenting the electronics of the  Pico 2 W microcontroller and the sensors used in the plant pot:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;hugo_pointing.jpg&quot; alt=&quot;Hugo pointing at slides&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;software-part&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#software-part&quot; aria-label=&quot;Anchor link for: software-part&quot;&gt;Software part&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The software part (Rust, Embassy, controls) was done by Willem. Notes available at &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sysghent&#x2F;plant-pot&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Two participants working on their plant pot:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;pair_programming.jpg&quot; alt=&quot;pair_programming&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Functional Programming</title>
+        <published>2025-04-01T00:00:00+00:00</published>
+        <updated>2025-04-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/functional-programming/"/>
+        <id>https://sysghent.be/events/functional-programming/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/functional-programming/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Tech talks</title>
+        <published>2025-01-21T00:00:00+00:00</published>
+        <updated>2025-01-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/january-talks/"/>
+        <id>https://sysghent.be/events/january-talks/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/january-talks/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;hugo.jpg&quot; alt=&quot;Hugo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Launch event</title>
+        <published>2024-12-18T00:00:00+00:00</published>
+        <updated>2024-12-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/first-event/"/>
+        <id>https://sysghent.be/events/first-event/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/first-event/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;marengo.jpg&quot; alt=&quot;Marengo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
