@@ -10,11 +10,10 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: auto;
     width: 100%;
     height: 100%;
     padding: 0em;
-    margin: 0;
     background: linear-gradient(135deg, var(--primary-background) 50%, var(--secondary-background) 100%);
 
     display: flex;
@@ -67,6 +66,7 @@ main {
         transform: translateY(0) rotate(0deg);
         opacity: 0.2;
     }
+
 
     10% {
         opacity: 1;

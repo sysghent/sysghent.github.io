@@ -4,7 +4,7 @@ description = "Come relax, share ideas, and enjoy some drinks in a friendly atmo
 weight = 7
 
 [taxonomies]
-tags = ["networking", "drinks", "dinner", "bar", "local"]
+tags = ["networking", "drinks", "dinner", "bar"]
 
 [extra]
 type = "social"

@@ -1,7 +1,7 @@
 +++
 title = "Events"
 insert_anchor_links = "heading"
-
+template = "section.html"
 sort_by ="date"
 +++
 
