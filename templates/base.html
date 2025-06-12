@@ -82,7 +82,7 @@
                 {% set section = get_section(path="events/_index.md") %}
                 <li class="section-page-listing">
                     <h3>
-                        Upcoming {{ section.title }}
+                        <a href="/events#title">{{ section.title }}</a>
                     </h3>
                     <ul id="event-list">
 
@@ -162,12 +162,9 @@
                         {% endfor %}
                     </ul>
 
-                    <h3>
-                        <a href="/events#title">{{ section.title }}</a>
-                    </h3>
 
                 </li>
-                {% set section = get_section(path="_index.md") %}
+
 
             </ul>
 
@@ -177,7 +174,7 @@
 
 
 
-
+        {% set section = get_section(path="_index.md") %}
         <article id="base-article">
             {% block content %}{% endblock %}
 

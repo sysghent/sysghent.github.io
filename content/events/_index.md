@@ -1,7 +1,8 @@
 +++
 title = "Events"
 insert_anchor_links = "heading"
-template = "section.html"
+template = "events.html"
+description = "Events about systems programming in Ghent, Belgium."
 sort_by ="date"
 +++
 
