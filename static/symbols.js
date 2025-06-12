@@ -1,8 +1,8 @@
 // Arrays of programming languages and type-theoretic symbols
 const programmingLanguages = [
     "C++", "Rust", "Haskell", "Scala", "Elixir", "ML",
-    "Go", "F#", "OCaml", "Erlang", "Julia", "C",
-    "Ada", "Prolog", "Agda", "Rocq", "Coq", "Idris"
+    "Go", "F#", "OCaml", "Erlang", "Julia", "C", "C--",
+    "Ada", "Prolog", "Agda", "Rocq", "Coq", "Idris", "Lean"
 ];
 
 const typeTheoreticSymbols = [

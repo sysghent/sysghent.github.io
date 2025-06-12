@@ -7,7 +7,7 @@ template = "index.html"
 
 We aim to bring **systems programming enthusiasts** together by organizing events in Ghent and the surrounding area. Overall, we try to keep the events free and accessible to beginners:
 
-- **Drinks/dinner:** Relax after a long day at work and chat with like-minded people. If you are too exhausted to think, no worries, no-one will judge. The primary location will be cafe/restaurant Marengo next to Coupure in Ghent. Please inform the organizer if you would like to eat as well.
+- **Drinks/dinner:** Relax after a long day at work and chat with like-minded people. If you are too exhausted to think, no worries, no-one will judge.
 - **Presentations:** Exciting tools and frameworks in programming languages that give a combination of performance and expressiveness. For example, Rust or C++, but other topics are welcome.
 - **Workshops:** Moments to hack and learn together on trendy systems software or hardware-related topics. Actual topics will depend on the interests of participants and/or organisers.
 
