@@ -13,12 +13,6 @@ location = "Marengo, Gent (Belgium)"
 registration = "https://mobilizon.be/events/7041c32d-5409-4556-b28e-cef2076cf6d1"
 +++
 
+![event-banner](/events/marengo-social.png)
 
-As usual, we will meet at the Marengo bar/restaurant.
-
-You can join us at any time in the evening, but here's a rough schedule:
-
-- 19:00: Dinner for those who want to join
-- 20:00: Drinks and socializing
-
-You can find us on one of the tables inside.
+As usual, we will meet at the Marengo bar/restaurant. You can find us on one of the tables inside.
