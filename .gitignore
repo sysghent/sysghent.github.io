@@ -1,2 +1,3 @@
-*.png
+event-banners/*.png
+community-branding/*.png
 /public
