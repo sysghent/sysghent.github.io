@@ -14,18 +14,13 @@ body {
     width: 100%;
     height: 100%;
     padding: 0em;
-    background: linear-gradient(135deg, var(--primary-background) 50%, var(--secondary-background) 100%);
-
+    background: linear-gradient(135deg, var(--primary-background) 0%, var(--secondary-background) 50%, var(--tertiary-background) 100%);
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     z-index: -1;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: fit-content;
-
-
-
-
+    min-height: 100vh;
 }
 
 

@@ -1,4 +1,4 @@
-@import './constants.css';
+@import './constants.scss';
 
 #sidebar {
     position: sticky;
@@ -7,26 +7,26 @@
     width: fit-content;
     top: 1em;
     flex: 2;
-    background: var(--secondary-background);
+    background: var(--card-background);
+    backdrop-filter: blur(10px);
     height: fit-content;
-    padding: 1em;
-    // border-radius: 10px;
+    padding: 1.5em;
+    border-radius: var(--border-radius);
     border: var(--border);
+    box-shadow: var(--shadow-md);
     animation: slideInRight 1s ease-out;
-
-
-
 }
 
-aside h2 {
-    color: var(--primary-text);
-    // margin-bottom: 20px;
-    text-align: left;
-}
-
-aside ul {
-    list-style-type: none;
-    padding: 0;
+aside {
+    h2 {
+        color: var(--primary-text);
+        text-align: left;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
 }
 
 .event-type {
@@ -38,72 +38,48 @@ aside ul {
     margin-top: 5px;
     font-size: 0.95em;
 
-
-
-    & .event-item {
+    .event-item {
         background: var(--primary-background);
-        padding: 20px;
-        // border-radius: 8px;
-        margin-bottom: 20px;
-        transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 1.2em;
+        border-radius: var(--border-radius-sm);
+        margin-bottom: 1em;
+        transition: all var(--transition-smooth);
+        box-shadow: var(--shadow-sm);
+        border: var(--border);
 
-
-        & .event-title {
+        .event-title {
             font-weight: bold;
             color: var(--primary-text);
             font-size: 1.3em;
             text-transform: capitalize;
-
-
         }
 
-        & .event-description {
+        .event-description {
+            color: var(--secondary-text);
 
-            color: var(--secundary-text);
-
-            & .event-date {
+            .event-date {
                 font-style: italic;
                 color: var(--primary-text);
             }
 
-
-            & a {
-
+            a {
                 text-decoration: none;
-
             }
         }
 
-
-
-
-    }
-
-
-    & .event-item:hover {
-        transform: translateY(-5px) scale(1.02);
-        background: var(--primary-background);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.35);
+        &:hover {
+            transform: translateY(-2px);
+            background: var(--secondary-background);
+            box-shadow: var(--shadow-lg);
+        }
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 @keyframes slideInRight {
     from {
         opacity: 0;
         transform: translateX(20px);
     }
-
     to {
         opacity: 1;
         transform: translateX(0);
