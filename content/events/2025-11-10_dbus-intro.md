@@ -10,7 +10,7 @@ tags = ["D-Bus", "SystemD", "introduction", "IPC", "operating system"]
 [extra]
 type = "presentation"
 time = "19:00"
-location = "Kamerstraat 10, Ghent"
+location = "Kammerstraat 10, Ghent"
 +++
 
 (Date is provisional.)
