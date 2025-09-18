@@ -3,24 +3,32 @@ title = "About Us"
 template = "index.html"
 +++
  
+## What We Are
+
+We are a **local community** for people passionate about performance-conscious and pragmatic programming who want to meet physically in Ghent. This is a platform where members take initiative to organize events focused on systems programming and software engineering topics.
+
+Our events center around encoding ideas in code and making prototypes work in real-life. We view software both as something that serves a purpose and as something that brings peace of mind in its own right.
+
 ## What We Do
 
-We aim to bring **systems programming enthusiasts** together by organizing events in Ghent and the surrounding area. Overall, we try to keep the events free and accessible to beginners:
+**Member-driven events** on topics related to software and systems engineering:
 
-- **Drinks/dinner:** Relax after a long day at work and chat with like-minded people. If you are too exhausted to think, no worries, no-one will judge.
-- **Presentations:** Exciting tools and frameworks in programming languages that give a combination of performance and expressiveness. For example, Rust or C++, but other topics are welcome.
-- **Workshops:** Moments to hack and learn together on trendy systems software or hardware-related topics. Actual topics will depend on the interests of participants and/or organisers.
+- **Social gatherings:** Connect with like-minded developers over drinks or dinner
+- **Presentations:** Share knowledge about performance-oriented tools, languages (Rust, C++, Zig, Go), and frameworks  
+- **Workshops:** Collaborate on systems software, embedded systems, or hardware-related projects
 
-## Why the name
+All events are organized by community members. Most are free, some may have small fees to cover costs. **No events generate profit for individuals or groups within the community.**
+
+## Membership
+
+This is a **physical meetup community** for the Ghent area. We welcome software engineers and systems programmers who can attend in-person events. Anonymous internet participation is not supported.
+
+The easiest way to join, is to install the Signal messaging app (mobile/desktop) and join the Signal group chat (link above).
+
+## Why The Name
 
 According to [Wikipedia](https://en.wikipedia.org/wiki/Systems_programming):
 
 > **Systems programming** aims to produce software and software platforms _which provide services to other software_, are performance constrained, or both.
 
 This is of course a very broad definition, but it includes programming languages such as C, C++, Rust, Zig, and Go, as well as topics like operating systems, compilers, and embedded systems.
-
-## Who We Are
-
-This community was originally a hobby project started by [Willem](https://wvhulle.github.io) in December 2024. Meanwhile, several other passionate people/friends are helping out by organizing events or giving presentations, such as [Hugo Herter](https://github.com/hoh) and [Jo Devriendt](https://jodevriendt.com/contact/).
-
-We are passionate developers. We want to bring together people in the field, who might be isolated from each other, to learn and grow together.
