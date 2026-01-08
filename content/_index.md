@@ -1,7 +1,7 @@
-+++
-title = "Systems Programming Ghent"
-template = "index.html"
-+++
+---
+title: Systems Programming Ghent
+template: index.html
+---
 
 Local community for performance-conscious and pragmatic programming in Ghent.
 

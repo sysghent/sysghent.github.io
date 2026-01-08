@@ -1,7 +1,7 @@
-+++
-title = "About Us"
-template = "about.html"
-+++
+---
+title: About Us
+template: about.html
+---
 
 ## What We Are
 
