@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
         rel="stylesheet">
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -36,6 +36,13 @@
 
 <body>
 
+    <header id="site-header">
+        <a href="/">
+            <img id="logo" src="/logo.svg" alt="Systems Programming Ghent Logo" width="100" height="100">
+        </a>
+        <h1>Systems Programming Ghent</h1>
+    </header>
+
     {% block top %}
     {% endblock %}
 
@@ -49,10 +56,10 @@
             <i class='bx bx-chat'></i>
         </a>
 
-        <!-- <a href="https://www.meetup.com/systems-programming-ghent/" aria-label="Meetup Group"> <span>
+        <a href="https://www.meetup.com/systems-programming-ghent/" aria-label="Meetup Group"> <span>
                 MeetUp</span>
             <i class='bx bx-calendar'></i>
-        </a> -->
+        </a>
 
 
         <!-- <a href="https://mobilizon.be/@sysghent" aria-label="Mobilizon group"> <span>
@@ -73,7 +80,15 @@
             <ul id="section-list">
                 <li id="home-button">
                     <h3>
-                        <a href="/#title">
+                        <a href="/">
+                            Home
+                        </a>
+                    </h3>
+                </li>
+
+                <li>
+                    <h3>
+                        <a href="/about">
                             About
                         </a>
                     </h3>
@@ -82,7 +97,7 @@
                 {% set section = get_section(path="events/_index.md") %}
                 <li class="section-page-listing">
                     <h3>
-                        <a href="/events#title">{{ section.title }}</a>
+                        <a href="/events">{{ section.title }}</a>
                     </h3>
                     <ul id="event-list">
 
@@ -105,7 +120,7 @@
                                     {{ page.extra.type }}:
                                 </span>
                                 {% endif %}
-                                <a href="{{ page.permalink }}#title">
+                                <a href="{{ page.permalink }}">
                                     {{ page.title }}
                                 </a>
 

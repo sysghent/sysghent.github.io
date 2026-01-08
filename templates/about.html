@@ -1,0 +1,16 @@
+{% extends "page.html" %}
+
+{% block content %}
+
+<header>
+    <h2 id="title">{{ page.title }}</h2>
+    <p class="tagline">Open community for systems programmers around Ghent</p>
+</header>
+
+<img src="/events/hugo_helping.jpg" id="atmosphere" alt="Workshop about embedded Rust with Embassy." />
+
+<section>
+    {{ page.content | safe }}
+</section>
+
+{% endblock content %}

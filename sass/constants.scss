@@ -1,42 +1,18 @@
 :root {
-    --primary-text: #1a1a1a;
     --secondary-text: #6b6b6b;
-    --tertiary-text: #888888;
-
     --primary-background: #ffffff;
     --secondary-background: #f8f9fa;
-    --tertiary-background: #e9ecef;
-    --accent-primary: #fdb10d;
-    --code-background: #fffbf3;
+    --accent: #fdb10d;
     --card-background: rgba(255, 255, 255, 0.8);
-    
-    --font-family: 'Fira Sans', sans-serif;
-    --border-radius: 12px;
-    --border-radius-sm: 8px;
-    --border: 1px solid rgba(107, 107, 107, 0.2);
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
-    
-    --transition-fast: 0.2s ease;
-    --transition-smooth: 0.3s ease;
+    --border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-text: #e9ecef;
         --secondary-text: #adb5bd;
-        --tertiary-text: #6c757d;
-        
         --primary-background: #121212;
         --secondary-background: #1e1e1e;
-        --tertiary-background: #2d2d2d;
-        --code-background: #1a1a1a;
         --card-background: rgba(30, 30, 30, 0.8);
-        
         --border: 1px solid rgba(255, 255, 255, 0.1);
-        --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-        --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.3);
-        --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.4);
     }
 }

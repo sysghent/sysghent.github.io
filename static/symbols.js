@@ -84,9 +84,8 @@ function initFallingSymbols() {
         const delay = getRandomFloat(0, duration);
         symbol.style.animationDelay = `${delay}s`;
 
-        // Randomize opacity between 0.05 and 0.2
         const opacity = getRandomFloat(0.05, 0.2);
-        symbol.style.color = `rgba(0, 0, 0, ${opacity})`;
+        symbol.style.opacity = opacity;
 
         // Append the symbol to the background container
         background.appendChild(symbol);

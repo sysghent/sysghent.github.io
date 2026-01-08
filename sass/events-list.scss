@@ -2,30 +2,23 @@
 
 #sidebar {
     position: sticky;
-    max-width: 20%;
-    min-width: 20em;
-    width: fit-content;
     top: 1em;
-    flex: 2;
+    width: fit-content;
+    height: fit-content;
+    padding: 1em 1.5em 1em 1.5em;
     background: var(--card-background);
     backdrop-filter: blur(10px);
-    height: fit-content;
-    padding: 1.5em;
-    border-radius: var(--border-radius);
     border: var(--border);
-    box-shadow: var(--shadow-md);
-    animation: slideInRight 1s ease-out;
-}
+    border-radius: 12px;
+    font-size: 0.9em;
 
-aside {
-    h2 {
-        color: var(--primary-text);
-        text-align: left;
-    }
-    
     ul {
-        list-style-type: none;
+        list-style: none;
         padding: 0;
+    }
+
+    h3 {
+        font-size: 1.1em;
     }
 }
 
@@ -35,31 +28,27 @@ aside {
 }
 
 #event-list {
-    margin-top: 5px;
-    font-size: 0.95em;
+    font-size: 0.85em;
 
     .event-item {
+        padding: 0.8em;
+        margin-bottom: 0.8em;
         background: var(--primary-background);
-        padding: 1.2em;
-        border-radius: var(--border-radius-sm);
-        margin-bottom: 1em;
-        transition: all var(--transition-smooth);
-        box-shadow: var(--shadow-sm);
         border: var(--border);
+        border-radius: 8px;
 
         .event-title {
             font-weight: bold;
-            color: var(--primary-text);
-            font-size: 1.3em;
+            font-size: 1.1em;
             text-transform: capitalize;
         }
 
         .event-description {
             color: var(--secondary-text);
+            font-size: 0.95em;
 
             .event-date {
                 font-style: italic;
-                color: var(--primary-text);
             }
 
             a {
@@ -68,20 +57,7 @@ aside {
         }
 
         &:hover {
-            transform: translateY(-2px);
             background: var(--secondary-background);
-            box-shadow: var(--shadow-lg);
         }
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
     }
 }

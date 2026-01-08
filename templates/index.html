@@ -9,19 +9,6 @@
 
 
 {% block top %}
-
-<header>
-
-    <img id="logo" src="logo.svg" alt="Systems Programming Ghent Logo" width="100" height="100">
-
-    <h1>Systems Programming <br /> Ghent</h1>
-
-    <p class="tagline">Open community for systems programmers around Ghent</p>
-
-
-    <img src="/events/hugo_helping.jpg" id="atmosphere" alt="Presentations at Watt The Firms in Ghent." />
-</header>
-
 {% endblock top %}
 
 
@@ -30,6 +17,48 @@
 
 {{ section.content | safe }}
 
+<div style="margin-top: 3em;"></div>
 
+{% set events_section = get_section(path="events/_index.md") %}
+{% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
+
+{% for page in events_section.pages %}
+    {% set d = page.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
+    {% if d > n %}
+        <h3>Next Event</h3>
+
+        <p>
+            <a href="{{ page.permalink }}">
+                {% if page.extra.type %}
+                    <span class="event-type">{{ page.extra.type }}:</span>
+                {% endif %}
+                <strong>{{ page.title }}</strong>
+            </a>
+            —
+            <strong>{{ page.date | date(format="%A, %B %d, %Y") }}</strong>{% if page.extra.time %} at {{ page.extra.time }}{% endif %}
+            {% if page.extra.location %}
+                · <a href="https://www.openstreetmap.org/search?query={{ page.extra.location }}" target="_blank">{{ page.extra.location }}</a>
+            {% endif %}
+            {% if page.extra.speaker %}
+                · Speaker: {{ page.extra.speaker }}
+            {% endif %}
+        </p>
+
+        {% if page.description %}
+            <p>{{ page.description }}</p>
+        {% endif %}
+
+        <p>
+            {% if page.extra.registration %}
+                <a href="{{ page.extra.registration }}" class="button">Register</a>
+            {% endif %}
+            <a href="{{ page.permalink }}" class="button">Event details</a>
+        </p>
+
+        {% break %}
+    {% endif %}
+{% endfor %}
+
+<!-- <p><a href="/events">View all events</a></p> -->
 
 {% endblock content %}

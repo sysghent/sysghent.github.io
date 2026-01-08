@@ -19,18 +19,6 @@
 {% endblock %}
 
 {% block top %}
-
-<header id="permanent-header">
-
-
-    <a href="/">
-        <img id="logo" src="/logo.svg" alt="Systems Programming Ghent Logo" width="100" height="100">
-    </a>
-
-
-
-</header>
-
 {% endblock %}
 
 
@@ -52,6 +40,7 @@
     </h2>
 
 
+    {% if page.taxonomies.tags %}
     <p>
     <ul id="page-tags">
         {%- for tag in page.taxonomies.tags -%}
@@ -62,12 +51,14 @@
 
 
     </p>
+    {% endif %}
 
 </header>
 
 
 <section>
 
+    {% if page.date %}
     <p>
 
 
@@ -79,6 +70,7 @@
 
 
     </p>
+    {% endif %}
 
 
 
@@ -94,17 +86,21 @@
     <p>
         <a href="https://www.openstreetmap.org/search?query={{ page.extra.location }}" target="_blank">{{
             page.extra.location }}</a>
-        {% endif %}
-
-
-
     </p>
+    {% endif %}
+
+    {% if page.extra.speaker %}
+    <p>
+        <strong>Speaker:</strong> {{ page.extra.speaker }}
+    </p>
+    {% endif %}
 
 
-
+    {% if page.description %}
     <h3>
         {{ page.description }}
     </h3>
+    {% endif %}
 
 
 
@@ -164,14 +160,14 @@
 
     {% if page.higher %}
     <span>←
-        <a href="{{ page.higher.permalink | safe }}#title">{{ page.higher.title }}</a> </span>
+        <a href="{{ page.higher.permalink | safe }}">{{ page.higher.title }}</a> </span>
 
 
     {% endif %}
 
     {% if page.lower %}
     <span>
-        <a href="{{ page.lower.permalink | safe }}#title">{{ page.lower.title }}</a> → </span>
+        <a href="{{ page.lower.permalink | safe }}">{{ page.lower.title }}</a> → </span>
 
 
     {% endif %}

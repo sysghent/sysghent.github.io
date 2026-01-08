@@ -1,88 +1,53 @@
 html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-family);
-    overflow: auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color-scheme: light dark;
 }
 
 body {
     margin: auto;
-    width: 100%;
-    height: 100%;
-    padding: 0em;
-    background: linear-gradient(135deg, var(--primary-background) 0%, var(--secondary-background) 50%, var(--tertiary-background) 100%);
-    background-attachment: fixed;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    z-index: -1;
-    background-repeat: no-repeat;
     min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-background), var(--secondary-background));
+    background-attachment: fixed;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: url('/events/hugo_helping.jpg') center/cover;
+    opacity: 0.05;
+    z-index: -1;
+    pointer-events: none;
 }
 
 
 main {
-    margin: 0;
     padding: 1em;
     display: flex;
     gap: 2em;
 }
 
-
-
 .background {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    /* Allow clicks to pass through */
+    inset: 0;
     overflow: hidden;
+    pointer-events: none;
     z-index: -1;
-    /* Place behind all other content */
 }
 
-/* Falling Symbols */
 .background .symbol {
     position: absolute;
     top: -50px;
-    color: rgb(0, 0, 0);
     font-size: 2em;
+    font-family: 'IBM Plex Mono', monospace;
     animation: fall 20s linear infinite;
-    user-select: none;
 }
 
 @keyframes fall {
-    0% {
-        transform: translateY(0) rotate(0deg);
-        opacity: 0.2;
-    }
-
-
-    10% {
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(110vh) rotate(360deg);
-        opacity: 0.2;
-    }
-}
-
-
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    0% { transform: translateY(0) rotate(0deg); opacity: 0.2; }
+    10% { opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0.2; }
 }

@@ -27,19 +27,13 @@
     <tbody>
         {% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
 
-
-
-
-
         {% for post in section.pages %}
-
 
         {% set d = post.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
 
         {% if d > n %}
 
-
-        <tr class="{% if d > n %}future{% else %}past{% endif %}">
+        <tr>
             <td>{{ post.date | date(format="%A, %Y-%m-%d") }}</td>
             <td><a href="{{ post.permalink }}">{{ post.title }}</a></td>
             <td>{{ post.description }}</td>
@@ -64,24 +58,20 @@
     <tbody>
         {% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
 
-
-
-
-
         {% for post in section.pages %}
-
 
         {% set d = post.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
 
-        {% if d < n %} <tr class="{% if d > n %}future{% else %}past{% endif %}">
+        {% if d < n %}
+        <tr class="past">
             <td>{{ post.date | date(format="%A, %Y-%m-%d") }}</td>
             <td><a href="{{ post.permalink }}">{{ post.title }}</a></td>
             <td>{{ post.description }}</td>
-            </tr>
+        </tr>
 
-            {% endif %}
+        {% endif %}
 
-            {% endfor %}
+        {% endfor %}
     </tbody>
 </table>
 
