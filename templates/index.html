@@ -22,10 +22,10 @@
 {% set events_section = get_section(path="events/_index.md") %}
 {% set n = now() | date(format="%Y-%m-%d") | date(format="%s") | int %}
 
-{% for page in events_section.pages %}
+        <h3>Next Event(s)</h3>
+{% for page in events_section.pages | reverse %}
     {% set d = page.date | date(format="%Y-%m-%d") | date(format="%s") | int %}
     {% if d > n %}
-        <h3>Next Event</h3>
 
         <p>
             <a href="{{ page.permalink }}">
@@ -55,7 +55,6 @@
             <a href="{{ page.permalink }}" class="button">Event details</a>
         </p>
 
-        {% break %}
     {% endif %}
 {% endfor %}
 
