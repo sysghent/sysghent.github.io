@@ -20,8 +20,3 @@ bottom_footnotes = true
 # Prose
 render_emoji = true
 smart_punctuation = true
-
-# Code
-error_on_missing_highlight = true
-highlight_code = true
-highlight_theme = "demain"
