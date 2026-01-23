@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>SysGhent</title>
+    <link rel="self" type="application/atom+xml" href="https://sysghent.be/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://sysghent.be"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-02-23T00:00:00+00:00</updated>
+    <id>https://sysghent.be/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Refactoring with AST-Grep</title>
+        <published>2026-02-23T00:00:00+00:00</published>
+        <updated>2026-02-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/refactoring/"/>
+        <id>https://sysghent.be/events/refactoring/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/refactoring/">&lt;p&gt;Recent advancements in industry made refactoring incredibly boring, expensive and slow. (&lt;em&gt;Think about the sound a donkey makes but then reversed.&lt;&#x2F;em&gt;)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;willemvanhulle.tech&quot;&gt;Willem Vanhulle&lt;&#x2F;a&gt; will show how to make refactoring great again with a tool &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;ast-grep.github.io&#x2F;&quot;&gt;AST-Grep&lt;&#x2F;a&gt;. This tool can be used to apply extremely targeted and efficient refactors to large codebases in milliseconds.&lt;&#x2F;p&gt;
+&lt;p&gt;A sample from the official website:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code data-lang=&quot;bash&quot;&gt;ast-grep -p &amp;#39;$A &amp;amp;&amp;amp; $A()&amp;#39; -r &amp;#39;$A?.()&amp;#39;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The presentation (of 30 minutes.) will not be too technical, so people are able to follow along after a long workday without having a laptop in front of them.&lt;&#x2F;p&gt;
+&lt;p&gt;Afterward, let’s have a drink in the area!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Matter IoT overview</title>
+        <published>2026-01-20T00:00:00+00:00</published>
+        <updated>2026-01-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/zigbee/"/>
+        <id>https://sysghent.be/events/zigbee/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/zigbee/">&lt;p&gt;Thomas Langewouters will present about his favorite topic: &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;nl.wikipedia.org&#x2F;wiki&#x2F;Matter&quot;&gt;Matter&lt;&#x2F;a&gt;, a new protocol for smart home automation and internet of things.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Making secure systems with WebAssembly</title>
+        <published>2025-12-16T00:00:00+00:00</published>
+        <updated>2025-12-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/webassembly/"/>
+        <id>https://sysghent.be/events/webassembly/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/webassembly/">&lt;p&gt;Merlijn Sebrechts will present about his work on WebAssembly as a researcher.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>NuShell: Superglue for your Operating System</title>
+        <published>2025-12-03T00:00:00+00:00</published>
+        <updated>2025-12-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/nushell/"/>
+        <id>https://sysghent.be/events/nushell/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/nushell/">&lt;p&gt;(Presented by &lt;a href=&quot;https:&#x2F;&#x2F;sysghent.be&#x2F;events&#x2F;nushell&#x2F;willemvanhulle.tech&quot;&gt;Willem Vanhulle&lt;&#x2F;a&gt;.)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;sysghent.be&#x2F;events&#x2F;nushell&#x2F;nushell.sh&quot;&gt;NuShell&lt;&#x2F;a&gt; is a fairly new type of shell focused on &lt;em&gt;functional structured data processing&lt;&#x2F;em&gt;. It &lt;strong&gt;fixes most problems of the traditional POSIX shellls&lt;&#x2F;strong&gt; and takes inspiration from PowerShell and real programming languages.&lt;&#x2F;p&gt;
+&lt;p&gt;Willem has been a daily user of Nu shell for almost a year and would like to share with you how it can improve your efficiency as a script user, scientist, engineer or developer. Nu shell allows you to process all kinds of data in clean pipelines and build easy to maintain scripts.&lt;&#x2F;p&gt;
+&lt;p&gt;The plan for this evening is:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;19:30: interactive presentation about nu&lt;&#x2F;li&gt;
+&lt;li&gt;20:30: practice session&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;You can find more information about the language at &lt;a href=&quot;https:&#x2F;&#x2F;sysghent.be&#x2F;events&#x2F;nushell&#x2F;nushell.sh&quot;&gt;nushell.sh&lt;&#x2F;a&gt;. Recently, Willem also released a linter for Nu to help you get started: &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wvhulle&#x2F;nu-lint&quot;&gt;nu-lint&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Introduction to D-Bus</title>
+        <published>2025-11-10T00:00:00+00:00</published>
+        <updated>2025-11-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/dbus-intro/"/>
+        <id>https://sysghent.be/events/dbus-intro/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/dbus-intro/">&lt;p&gt;(Presented by &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;ewanhiggs&#x2F;&quot;&gt;Ewan Higgs&lt;&#x2F;a&gt;.)&lt;&#x2F;p&gt;
+&lt;p&gt;The location is a little bit hidden, please read the instructions at &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;hackerspace.gent&#x2F;contact.html&quot;&gt;hackerspace.gent&lt;&#x2F;a&gt; to find the entrance.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Haskell - Intro</title>
+        <published>2025-10-20T00:00:00+00:00</published>
+        <updated>2025-10-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/haskell-intro/"/>
+        <id>https://sysghent.be/events/haskell-intro/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/haskell-intro/">&lt;p&gt;This event will be hosted at and sponsored by &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;doubleverify.com&#x2F;&quot;&gt;DoubleVerify&lt;&#x2F;a&gt;. Some drinks and pizza are provided by DoubleVerify.&lt;&#x2F;p&gt;
+&lt;p&gt;Speakers:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;koen-de-keyser&#x2F;&quot;&gt;Koen De Keyser&lt;&#x2F;a&gt; (DoubleVerify) used to write Haskell professionally and will use a practical approach for a beginner-friendly introduction.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.linkedin.com&#x2F;in&#x2F;vomit&#x2F;&quot;&gt;Hendrik De Vloed&lt;&#x2F;a&gt; (Dekimo) will also share his experience using Haskell.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;haskell.jpeg&quot; alt=&quot;Koen speaking&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fries for Programmers</title>
+        <published>2025-10-01T00:00:00+00:00</published>
+        <updated>2025-10-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/fries/"/>
+        <id>https://sysghent.be/events/fries/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/fries/">&lt;p&gt;We’ll have fries together at the excellent &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;share.google&#x2F;wUZheqDHCQDfNSDmZ&quot;&gt;Frituur De Papegaai&lt;&#x2F;a&gt;. They have vegan options as well.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bijloke Wonderland - Deli Teli</title>
+        <published>2025-08-21T00:00:00+00:00</published>
+        <updated>2025-08-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/wonderland/"/>
+        <id>https://sysghent.be/events/wonderland/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/wonderland/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.bijloke.be&#x2F;ox5C7z8K59JwheeAyu3khnvNG-hE3RZvBUwD2h9r-o4&#x2F;c:5463:1708:nowe:0:843&#x2F;s:1920:600:1&#x2F;aHR0cHM6Ly93d3cuYmlqbG9rZS5iZS8vY21zX2ZpbGVzL3N5c3RlbS9pbWFnZXMvaW1nMTg2ODhfb3JpZy5qcGc&quot; alt=&quot;event-banner&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Let’s do something different this time! Systems programmers may also enjoy some live music. We will meet at Bijloke Wonderland (a free music festival) to enjoy a concert by Deli Teli, a band that plays psychedelic Greek sixties rock.&lt;&#x2F;p&gt;
+&lt;p&gt;Musicians:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Arthur Bacon, synthesizers, organ &amp;amp; singing&lt;&#x2F;li&gt;
+&lt;li&gt;Tassos Tsitsivakos, electrical bouzouki &amp;amp; singing&lt;&#x2F;li&gt;
+&lt;li&gt;Christos Karypidis, base&lt;&#x2F;li&gt;
+&lt;li&gt;François Rossi, drums&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;For all the concerts taking in place at Bijloke Wonderland , have a look at &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;www.bijloke.be&#x2F;programma&quot;&gt;the program of Bijloke Wonderland&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Bar night</title>
+        <published>2025-07-28T00:00:00+00:00</published>
+        <updated>2025-07-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/bar-night/"/>
+        <id>https://sysghent.be/events/bar-night/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/bar-night/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Learn Lean</title>
+        <published>2025-07-17T00:00:00+00:00</published>
+        <updated>2025-07-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/lean/"/>
+        <id>https://sysghent.be/events/lean/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/lean/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;lean_intro.jpg&quot; alt=&quot;lean&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;contents&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#contents&quot; aria-label=&quot;Anchor link for: contents&quot;&gt;Contents&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Plan:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Introduction to the mathematical proof assistant and programming language &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;leanprover-community.github.io&#x2F;learn.html&quot;&gt;Lean4&lt;&#x2F;a&gt;. It can be used to implement software, but is currently very popular for formalizing mathematics.&lt;&#x2F;li&gt;
+&lt;li&gt;Introduction Mathlib, the standard library for Lean. It contains a lot of useful definitions and theorems from mathematics, which you can use to solve problems.&lt;&#x2F;li&gt;
+&lt;li&gt;Practice Lean by solving and analyzing riddles, which will be posted on &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;wvhulle&#x2F;riddle-proofs&quot;&gt;GitHub&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;price&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#price&quot; aria-label=&quot;Anchor link for: price&quot;&gt;Price&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The workshop and presentation itself is free.&lt;&#x2F;p&gt;
+&lt;p&gt;Use the link to the Signal chat if you want to join dinner around Vrijdagmarkt before the workshop (optional).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;how-to-find-us&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#how-to-find-us&quot; aria-label=&quot;Anchor link for: how-to-find-us&quot;&gt;How to find us&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Previously, on this page, another workshop took place at the groundfloor. This time we got another room in the back, called Balkonzaal. Not sure yet, but it might be the first floor.&lt;&#x2F;p&gt;
+&lt;p&gt;You can find details about the room at &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;zalenzoeker.stad.gent&#x2F;zalen&#x2F;fbb665eb-8877-443b-ad2d-e52674635498&quot;&gt;Balkonzaal&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Connect and Unwind</title>
+        <published>2025-06-23T00:00:00+00:00</published>
+        <updated>2025-06-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/meet-locals/"/>
+        <id>https://sysghent.be/events/meet-locals/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/meet-locals/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;marengo-social.png&quot; alt=&quot;event-banner&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;On this event you can catch up with colleagues in the systems programming field from around Ghent and maybe make some new friends.&lt;&#x2F;p&gt;
+&lt;p&gt;Topics that could be discussed: compilers, embedded, Rust, C++, high-performance, back-end programming and so on.&lt;&#x2F;p&gt;
+&lt;p&gt;As usual, we will meet at the Marengo bar&#x2F;restaurant. You can find us on one of the tables inside.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Grow smarter with embedded Rust</title>
+        <published>2025-06-04T00:00:00+00:00</published>
+        <updated>2025-06-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/plant-pot/"/>
+        <id>https://sysghent.be/events/plant-pot/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/plant-pot/">&lt;h2 id=&quot;hardware-part&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#hardware-part&quot; aria-label=&quot;Anchor link for: hardware-part&quot;&gt;Hardware part&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;This part was done by Hugo. Notes on hardware are in a slide-deck by &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;hoh&quot;&gt;Hugo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Hugo presenting the electronics of the  Pico 2 W microcontroller and the sensors used in the plant pot:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;hugo_pointing.jpg&quot; alt=&quot;Hugo pointing at slides&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;software-part&quot;&gt;&lt;a class=&quot;zola-anchor&quot; href=&quot;#software-part&quot; aria-label=&quot;Anchor link for: software-part&quot;&gt;Software part&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;The software part (Rust, Embassy, controls) was done by Willem. Notes available at &lt;a rel=&quot;external&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;sysghent&#x2F;plant-pot&quot;&gt;github&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Two participants working on their plant pot:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;pair_programming.jpg&quot; alt=&quot;pair_programming&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Functional Programming</title>
+        <published>2025-04-01T00:00:00+00:00</published>
+        <updated>2025-04-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/functional-programming/"/>
+        <id>https://sysghent.be/events/functional-programming/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/functional-programming/"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Tech talks</title>
+        <published>2025-01-21T00:00:00+00:00</published>
+        <updated>2025-01-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/january-talks/"/>
+        <id>https://sysghent.be/events/january-talks/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/january-talks/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;hugo.jpg&quot; alt=&quot;Hugo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Launch event</title>
+        <published>2024-12-18T00:00:00+00:00</published>
+        <updated>2024-12-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Willem Vanhulle
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://sysghent.be/events/first-event/"/>
+        <id>https://sysghent.be/events/first-event/</id>
+        
+        <content type="html" xml:base="https://sysghent.be/events/first-event/">&lt;p&gt;&lt;img src=&quot;&#x2F;events&#x2F;marengo.jpg&quot; alt=&quot;Marengo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
